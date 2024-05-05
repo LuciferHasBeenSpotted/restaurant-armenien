@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./reservaction.css">
+    <script src="./reservation.js" defer></script>
+    <title>Reservation</title>
+</head>
+<body>
+    <header class="accueil-header">
+        <a class="accueil-title" href="./index.html">Les plaisirs Arméniens</a>
+        <nav class="accueil-nav">
+            <ul class="accueil-menu-deroulant">
+                <li><a href="./menu.html">Menus</a>
+                    <ul>
+                        <li><a href="./menu.html#menu">Le Menu</a></li>
+                        <li><a href="./menu.html#formule">La formule midi</a></li>
+                        <li><a href="./menu.html#vins">La carte des vins</a></li>
+                    </ul>
+                </li>
+                <li><a href="./photos.html">Photos</a>
+                    <ul>
+                        <li><a href="./photos.html#restaurant">Le restaurant</a></li>
+                        <li><a href="./photos.html#plats">Nos plats</a></li>
+                    </ul>
+                </li>
+                <a href="./contact.html"class="accueil-header-link">Contact & Adresse</a>
+                <a class="bouton" href="#">RESERVER</a>
+            </ul>
+        </nav>
+    </header>
+    <section class="section-accueil">
+        <p class="accueil-slogan" id="menu">Reserver une table</p>
+    </section>
+    
+    <section class="section-reservations">
+        <h3 class="section-reservations-title">Vous souhaitez réserver une table chez nous ?</h3>
+        <form id="reservation-form">
+            <label class="reservation-label" for="nom">Nom:</label>
+            <input class="reservation-input" type="text" id="nom" name="nom" required><br>
+    
+            <label class="reservation-label" for="email">Email:</label>
+            <input class="reservation-input" type="email" id="email" name="email" required><br>
+    
+            <label class="reservation-label" for="date">Date:</label>
+            <input class="reservation-input" type="date" id="date" name="date" required><br>
+    
+            <label class="reservation-label" for="heure">Heure:</label>
+            <input class="reservation-input" type="time" id="heure" name="heure" required><br>
+    
+            <label class="reservation-label" for="nbPersonnes">Nombre de personnes:</label>
+            <input class="reservation-input" type="number" id="nbPersonnes" name="nbPersonnes" min="1" required><br>
+    
+            <button class="confirmation-button" type="submit">Réserver</button>
+        </form>
+    
+        <div class="reservation-state"></div>
+    </section>
+
+    <footer>
+        <div class="columns-container">
+            <div class="column">
+                <h3 class="marque">Les plaisirs Arméniens</h3>
+                <p>2 rue des Camélias, Alfortville</p>
+                <p>06 12 34 56 78</p>
+                <p>© 2024 Les Délices Arméniens - 2 rue des Camélias, Alfortville</p>
+            </div>
+            <div class="column column-reservation">
+                <p class="column-title">Reservations</p>
+                
+                <div class="bouton-reservation-container">
+                    <a class="bouton" href="#">RESERVER</a>
+                </div>
+            </div>
+            <div class="column column-newsletter">
+                <p class="column-title">Nous suivre</p>
+                <div class="bouton-newsletter-container">
+                    <a class="bouton" href="./newsletter.html">NEWSLETTER</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
